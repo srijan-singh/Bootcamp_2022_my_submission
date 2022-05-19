@@ -1,12 +1,14 @@
-  GNU nano 2.9.3                                           makefile                                                     
+CC=g++
+DEPS=functions.h.
+
 factorial: hello.o factorial.o main.o
-        g++ hello.o factorial.o main.o -o factorial
+        (CC) hello.o factorial.o main.o -o factorial
 
-hello.o: hello.cpp functions.h
-        g++ hello.cpp
+hello.o: hello.cpp DEPS
+        (CC) hello.cpp
 
-factorial.o: factorial.cpp functions.h
-        g++ factorial.cpp
+factorial.o: factorial.cpp DEPS
+        (CC) factorial.cpp
 
 clean:
         rm *.o output
