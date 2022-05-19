@@ -1,7 +1,6 @@
 #include<iostream>
-#include<vector>
 
-#include "facorial.h"
+#include "factorial.h"
 
 void print(vec arr)
 {

@@ -1,6 +1,6 @@
 #include<iostream>
 
-#include "facorial.h"
+#include "factorial.h"
 
 int main()
 {

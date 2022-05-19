@@ -1,12 +1,12 @@
 #include<iostream>
 
-#include "facorial.h"
+#include "factorial.h"
 
 vec factors(int num)
 {
     vec result;
 
-    for(int i=1; i<6; i++)
+    for(int i=1; i<=6; i++)
     {
         if(num%i==0)
         {
