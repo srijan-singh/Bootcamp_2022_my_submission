@@ -9,4 +9,4 @@ factorial.o: factorial.cpp functions.h
         g++ factorial.cpp
 
 clean:
-        rm *
+        rm *.o output
